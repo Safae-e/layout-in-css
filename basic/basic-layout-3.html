@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="../style.css">
     <style>
       /* Doe hier jouw ding! */
+
+      body {
+        display:grid;
+        grid-template-columns:  1fr 1fr ;
+        grid-template-rows: 5fr 1fr 1fr ;
+        height: 100vh;
+        gap: 0.5cm;
+       }
+
+       header, nav {
+        grid-row: 3;
+       }
+
+       main {
+        grid-row: 1;
+        grid-column: span 2;
+       }
+
+       footer {
+        grid-row: 2;
+        grid-column: span 2;
+       }
+
     </style>
   </head>
   <body id="basic-layout-3">
